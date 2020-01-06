@@ -1,0 +1,9 @@
+# Ignore Mac system files
+.DS_store
+
+**/.idea
+
+*.class
+assignment6/src/main/java/ReadingThread.java
+
+**/build

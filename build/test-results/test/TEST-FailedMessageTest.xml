@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="FailedMessageTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-11-27T21:17:43" hostname="Hantaos-MacBook-Pro.local" time="0.006">
+  <properties/>
+  <testcase name="testGetResponseSize" classname="FailedMessageTest" time="0.001"/>
+  <testcase name="testToString" classname="FailedMessageTest" time="0.0"/>
+  <testcase name="testGetDescription" classname="FailedMessageTest" time="0.001"/>
+  <testcase name="testHashCode" classname="FailedMessageTest" time="0.0"/>
+  <testcase name="testEquals" classname="FailedMessageTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

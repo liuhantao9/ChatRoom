@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>QueryUsersMessage.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Assignment8</a> &gt; <a href="index.source.html" class="el_package">Protocol.Requests</a> &gt; <span class="el_source">QueryUsersMessage.java</span></div><h1>QueryUsersMessage.java</h1><pre class="source lang-java linenums">package Protocol.Requests;
+
+import Protocol.MessageIdentifier;
+import Protocol.Request;
+import java.util.Arrays;
+import java.util.Objects;
+
+/**
+ * The type Query users.
+ */
+public class QueryUsersMessage extends Request {
+
+  /**
+   * Instantiates a new Query users message.
+   *
+   * @param usernameSize the username size
+   * @param username     the username
+   */
+  public QueryUsersMessage(Integer usernameSize, byte[] username) {
+<span class="fc" id="L20">    super(MessageIdentifier.QUERY_CONNECTED_USERS, usernameSize, username);</span>
+<span class="fc" id="L21">  }</span>
+
+  @Override
+  public String toString() {
+<span class="fc" id="L25">    final StringBuilder sb = new StringBuilder(&quot;QueryUsersMessage{&quot;);</span>
+<span class="fc" id="L26">    sb.append(&quot;usernameSize=&quot;).append(this.getUsernameSize());</span>
+<span class="fc" id="L27">    sb.append(&quot;, username=&quot;).append(Arrays.toString(this.getUsername()));</span>
+<span class="fc" id="L28">    sb.append('}');</span>
+<span class="fc" id="L29">    return sb.toString();</span>
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

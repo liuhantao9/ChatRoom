@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Request.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Assignment8</a> &gt; <a href="index.source.html" class="el_package">Protocol</a> &gt; <span class="el_source">Request.java</span></div><h1>Request.java</h1><pre class="source lang-java linenums">package Protocol;
+
+import java.util.Arrays;
+import java.util.Objects;
+
+/**
+ * The type Request.
+ */
+public abstract class Request extends Message {
+
+  /**
+   * The Sender size.
+   */
+  private Integer usernameSize;
+  /**
+   * The Sender username.
+   */
+  private byte[] username;
+
+  @Override
+  public abstract String toString();
+
+  /**
+   * equals method.
+   *
+   * @return boolean if equal.
+   */
+  @Override
+  public boolean equals(Object object) {
+<span class="fc bfc" id="L30" title="All 2 branches covered.">    if (this == object) {</span>
+<span class="fc" id="L31">      return true;</span>
+    }
+<span class="fc bfc" id="L33" title="All 2 branches covered.">    if (!(object instanceof Request)) {</span>
+
+<span class="fc" id="L35">      return false;</span>
+    }
+<span class="fc bfc" id="L37" title="All 2 branches covered.">    if (!super.equals(object)) {</span>
+
+<span class="fc" id="L39">      return false;</span>
+    }
+<span class="fc" id="L41">    Request request = (Request) object;</span>
+<span class="fc bfc" id="L42" title="All 2 branches covered.">    return Objects.equals(getUsernameSize(), request.getUsernameSize()) &amp;&amp;</span>
+<span class="fc bfc" id="L43" title="All 2 branches covered.">        Arrays.equals(getUsername(), request.getUsername());</span>
+  }
+
+  @Override
+  public int hashCode() {
+<span class="fc" id="L48">    int result = Objects.hash(super.hashCode(), getUsernameSize());</span>
+<span class="fc" id="L49">    result = 31 * result + Arrays.hashCode(getUsername());</span>
+<span class="fc" id="L50">    return result;</span>
+  }
+
+  /**
+   * Instantiates a new Request.
+   *
+   * @param identifier   the identifier
+   * @param usernameSize the username size
+   * @param username     the username
+   */
+  public Request(MessageIdentifier identifier, Integer usernameSize, byte[] username) {
+<span class="fc" id="L61">    super(identifier);</span>
+<span class="fc" id="L62">    this.usernameSize = usernameSize;</span>
+<span class="fc" id="L63">    this.username = username;</span>
+<span class="fc" id="L64">  }</span>
+
+  /**
+   * Gets username size.
+   *
+   * @return the username size
+   */
+  public Integer getUsernameSize() {
+<span class="fc" id="L72">    return usernameSize;</span>
+  }
+
+  /**
+   * Get username byte [ ].
+   *
+   * @return the byte [ ]
+   */
+  public byte[] getUsername() {
+<span class="fc" id="L81">    return username;</span>
+  }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="QueryResponseTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-27T21:17:43" hostname="Hantaos-MacBook-Pro.local" time="0.019">
+  <properties/>
+  <testcase name="testGetUsers" classname="QueryResponseTest" time="0.001"/>
+  <testcase name="testGetResponseSize" classname="QueryResponseTest" time="0.001"/>
+  <testcase name="testEquals" classname="QueryResponseTest" time="0.016"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

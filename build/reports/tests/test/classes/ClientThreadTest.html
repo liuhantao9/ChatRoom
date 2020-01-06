@@ -1,0 +1,2122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class ClientThreadTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class ClientThreadTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; ClientThreadTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">6</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.384s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">test</td>
+<td class="success">0.057s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testConnect1</td>
+<td class="success">0.012s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testConnect2</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDisconnect</td>
+<td class="success">0.053s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testMessage</td>
+<td class="success">0.111s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRequest</td>
+<td class="success">0.147s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Client is starting
+Thread is running
+ConnectResponse{success=true, msgSize=23, message=[83, 117, 99, 99, 101, 115, 115, 102, 117, 108, 108, 121, 32, 67, 111, 110, 110, 101, 99, 116, 101, 100, 33]}
+ConnectResponse{success=true, msgSize=23, message=[83, 117, 99, 99, 101, 115, 115, 102, 117, 108, 108, 121, 32, 67, 111, 110, 110, 101, 99, 116, 101, 100, 33]}
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>Exception.BadMessageException: Bad Connection message 
+	at Server.ClientThread.run(ClientThread.java:65)
+	at java.lang.Thread.run(Thread.java:748)
+Exception.BadMessageException: Bad Connection message 
+	at Server.ClientThread.run(ClientThread.java:65)
+	at java.lang.Thread.run(Thread.java:748)
+Exception.BadMessageException: You have to connect first
+	at Server.ClientThread.run(ClientThread.java:72)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.net.SocketException: Broken pipe (Write failed)
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+	at java.io.ObjectOutputStream$BlockDataOutputStream.drain(ObjectOutputStream.java:1877)
+	at java.io.ObjectOutputStream$BlockDataOutputStream.setBlockDataMode(ObjectOutputStream.java:1786)
+	at java.io.ObjectOutputStream.writeNonProxyDesc(ObjectOutputStream.java:1286)
+	at java.io.ObjectOutputStream.writeClassDesc(ObjectOutputStream.java:1231)
+	at java.io.ObjectOutputStream.writeOrdinaryObject(ObjectOutputStream.java:1427)
+	at java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1178)
+	at java.io.ObjectOutputStream.writeFatalException(ObjectOutputStream.java:1577)
+	at java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:351)
+	at Server.ClientThread.handleClient(ClientThread.java:104)
+	at Server.ClientThread.run(ClientThread.java:76)
+	at java.lang.Thread.run(Thread.java:748)
+	Suppressed: java.net.SocketException: Broken pipe (Write failed)
+		at java.net.SocketOutputStream.socketWrite0(Native Method)
+		at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+		at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+		at java.io.ObjectOutputStream$BlockDataOutputStream.drain(ObjectOutputStream.java:1877)
+		at java.io.ObjectOutputStream$BlockDataOutputStream.flush(ObjectOutputStream.java:1822)
+		at java.io.ObjectOutputStream.flush(ObjectOutputStream.java:719)
+		at java.io.ObjectOutputStream.close(ObjectOutputStream.java:740)
+		at Server.ClientThread.run(ClientThread.java:79)
+		... 1 more
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2950)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1534)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+	at Server.UserInputRequestThread.run(UserInputRequestThread.java:24)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.2.1</a> at Nov 27, 2019 1:17:44 PM</p>
+</div>
+</div>
+</body>
+</html>

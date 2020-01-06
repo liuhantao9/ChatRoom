@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>DirectMessage.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Assignment8</a> &gt; <a href="index.source.html" class="el_package">Protocol.Requests</a> &gt; <span class="el_source">DirectMessage.java</span></div><h1>DirectMessage.java</h1><pre class="source lang-java linenums">package Protocol.Requests;
+
+import Protocol.Message;
+import Protocol.MessageIdentifier;
+import Protocol.Request;
+import java.util.Arrays;
+import java.util.Objects;
+
+/**
+ * The type Direct message.
+ */
+public class DirectMessage extends Request {
+
+
+  /**
+   * The Recipient size.
+   */
+  private Integer recipientSize;
+  /**
+   * The Recipient username.
+   */
+  private byte[] recipientUsername;
+  /**
+   * The Message size.
+   */
+  private Integer messageSize;
+  /**
+   * The Message.
+   */
+  private byte[] message;
+
+
+  /**
+   * Gets recipient size.
+   *
+   * @return the recipient size
+   */
+  public Integer getRecipientSize() {
+<span class="fc" id="L39">    return recipientSize;</span>
+  }
+
+  /**
+   * Get recipient username byte [ ].
+   *
+   * @return the byte [ ]
+   */
+  public byte[] getRecipientUsername() {
+<span class="fc" id="L48">    return recipientUsername;</span>
+  }
+
+
+  /**
+   * Instantiates a new Direct message.
+   *
+   * @param usernameSize      the username size
+   * @param username          the username
+   * @param recipientSize     the recipient size
+   * @param recipientUsername the recipient username
+   * @param messageSize       the message size
+   * @param message           the message
+   */
+  public DirectMessage(Integer usernameSize, byte[] username,
+      Integer recipientSize, byte[] recipientUsername, Integer messageSize, byte[] message) {
+<span class="fc" id="L64">    super(MessageIdentifier.DIRECT_MESSAGE, usernameSize, username);</span>
+<span class="fc" id="L65">    this.recipientSize = recipientSize;</span>
+<span class="fc" id="L66">    this.recipientUsername = recipientUsername;</span>
+<span class="fc" id="L67">    this.messageSize = messageSize;</span>
+<span class="fc" id="L68">    this.message = message;</span>
+<span class="fc" id="L69">  }</span>
+
+  @Override
+  public String toString() {
+<span class="fc" id="L73">    final StringBuilder sb = new StringBuilder(&quot;DirectMessage{&quot;);</span>
+<span class="fc" id="L74">    sb.append(&quot;recipientSize=&quot;).append(recipientSize);</span>
+<span class="fc" id="L75">    sb.append(&quot;, recipientUsername=&quot;).append(Arrays.toString(recipientUsername));</span>
+<span class="fc" id="L76">    sb.append(&quot;, messageSize=&quot;).append(messageSize);</span>
+<span class="fc" id="L77">    sb.append(&quot;, message=&quot;).append(Arrays.toString(message));</span>
+<span class="fc" id="L78">    sb.append('}');</span>
+<span class="fc" id="L79">    return sb.toString();</span>
+  }
+
+  /**
+   * Gets message size.
+   *
+   * @return the message size
+   */
+  public Integer getMessageSize() {
+<span class="fc" id="L88">    return messageSize;</span>
+  }
+
+  /**
+   * equals method.
+   *
+   * @return boolean if equal.
+   */
+  @Override
+  public boolean equals(Object object) {
+<span class="fc bfc" id="L98" title="All 2 branches covered.">    if (this == object) {</span>
+<span class="fc" id="L99">      return true;</span>
+    }
+<span class="fc bfc" id="L101" title="All 2 branches covered.">    if (!(object instanceof DirectMessage)) {</span>
+<span class="fc" id="L102">      return false;</span>
+    }
+<span class="fc bfc" id="L104" title="All 2 branches covered.">    if (!super.equals(object)) {</span>
+<span class="fc" id="L105">      return false;</span>
+    }
+<span class="fc" id="L107">    DirectMessage that = (DirectMessage) object;</span>
+<span class="pc bpc" id="L108" title="1 of 2 branches missed.">    return Objects.equals(getRecipientSize(), that.getRecipientSize()) &amp;&amp;</span>
+<span class="fc bfc" id="L109" title="All 2 branches covered.">        Arrays.equals(getRecipientUsername(), that.getRecipientUsername()) &amp;&amp;</span>
+<span class="pc bpc" id="L110" title="1 of 2 branches missed.">        Objects.equals(getMessageSize(), that.getMessageSize()) &amp;&amp;</span>
+<span class="fc bfc" id="L111" title="All 2 branches covered.">        Arrays.equals(getMessage(), that.getMessage());</span>
+  }
+
+  /**
+   * Hash method.
+   *
+   * @return int hash value
+   */
+  @Override
+  public int hashCode() {
+<span class="fc" id="L121">    int result = Objects.hash(super.hashCode(), getRecipientSize(), getMessageSize());</span>
+<span class="fc" id="L122">    result = 31 * result + Arrays.hashCode(getRecipientUsername());</span>
+<span class="fc" id="L123">    result = 31 * result + Arrays.hashCode(getMessage());</span>
+<span class="fc" id="L124">    return result;</span>
+  }
+
+  /**
+   * Get message byte [ ].
+   *
+   * @return the byte [ ]
+   */
+  public byte[] getMessage() {
+<span class="fc" id="L133">    return message;</span>
+  }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SendInsultMessageTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2019-11-27T21:17:43" hostname="Hantaos-MacBook-Pro.local" time="0.001">
+  <properties/>
+  <testcase name="testGetRecipientName" classname="SendInsultMessageTest" time="0.0"/>
+  <testcase name="testGetRecipientSize" classname="SendInsultMessageTest" time="0.0"/>
+  <testcase name="testToString" classname="SendInsultMessageTest" time="0.001"/>
+  <testcase name="testHashCode" classname="SendInsultMessageTest" time="0.0"/>
+  <testcase name="testEquals" classname="SendInsultMessageTest" time="0.0"/>
+  <testcase name="testGetMsg" classname="SendInsultMessageTest" time="0.0"/>
+  <testcase name="testGetOtherUsers" classname="SendInsultMessageTest" time="0.0"/>
+  <testcase name="testGetMsgSize" classname="SendInsultMessageTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

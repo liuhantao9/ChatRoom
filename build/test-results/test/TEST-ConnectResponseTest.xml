@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ConnectResponseTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2019-11-27T21:17:43" hostname="Hantaos-MacBook-Pro.local" time="0.004">
+  <properties/>
+  <testcase name="testIsSuccess" classname="ConnectResponseTest" time="0.001"/>
+  <testcase name="testToString" classname="ConnectResponseTest" time="0.0"/>
+  <testcase name="testGetSize" classname="ConnectResponseTest" time="0.0"/>
+  <testcase name="testHashCode" classname="ConnectResponseTest" time="0.0"/>
+  <testcase name="testGetMessage" classname="ConnectResponseTest" time="0.0"/>
+  <testcase name="testEquals" classname="ConnectResponseTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
